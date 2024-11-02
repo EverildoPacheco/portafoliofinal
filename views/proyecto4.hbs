@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO4</title>
+    <link rel="stylesheet" href="/css/estiloproyectos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+    <!-- Header -->
+    {{>header}}
+
+  {{>navbar}} 
+
+    <!-- Main Content -->
+    <main>
+        <h2>Juego de Ahorcado</h2> <!-- Título agregado aquí -->
+        <div class="container">
+            <div class="image-slider">
+                <div class="slides">
+                    <img src="/images/Proyecto4ahorrcado.png" alt="Descripción de la imagen 1">
+                    <img src="/images/Menu.png" alt="Descripción de la imagen 2">
+                    <img src="/images/niveldificil.png" alt="Descripción de la imagen 3">
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="description">
+                <h1>Descripción del Proyecto</h1>
+                <p><br><b>Año:</b> 2023<br> <br><b>Categoria:</b> Programa de realizado en Java<br> <br>
+                    El Juego de Ahorcado es una implementación clásica del popular juego de palabras, desarrollado en Java. Este proyecto permite a los jugadores adivinar una palabra oculta eligiendo letras, mientras intentan evitar 
+                    que se complete el dibujo del ahorcado. <br><br>El objetivo de este proyecto es crear una experiencia de juego divertida y educativa que ayude a los jugadores a mejorar su vocabulario y habilidades de lógica. Al mismo tiempo, el proyecto permite a los desarrolladores practicar la programación en Java y familiarizarse con conceptos de lógica de programación, control de flujo y manejo de errores. </p>
+            </div>
+        </div>
+        <a href="https://github.com/josetzaj/AHORRCADO" class="github-button" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+    </main>
+    <script src="/views/script.js"></script>
+       {{>footer}}
+</body>
+</html>
+

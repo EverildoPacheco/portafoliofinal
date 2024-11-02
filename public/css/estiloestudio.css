@@ -1,0 +1,33 @@
+nav {
+    margin-bottom: 20px; /* Margen entre el nav y el contenido */
+}
+
+.estudios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre los elementos */
+    max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.estudio {
+    border: 2px solid #048ABF; /* Contorno del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.2s, box-shadow 0.2s; /* Efecto al pasar el mouse */
+}
+
+.estudio:hover {
+    transform: scale(1.05); /* Escalar ligeramente al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumentar la sombra */
+}
+
+.imagen-estudio {
+    width: 100%; /* Asegurarse que la imagen ocupe todo el ancho del contenedor */
+    border-top-left-radius: 8px; /* Bordes redondeados en la parte superior */
+    border-top-right-radius: 8px; /* Bordes redondeados en la parte superior */
+}
+
+.descripcion-estudio {
+    padding: 15px; /* Espaciado interno */
+}

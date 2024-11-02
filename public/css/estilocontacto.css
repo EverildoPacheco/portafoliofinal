@@ -1,0 +1,108 @@
+/* Normalize CSS */
+@import url('/css/normalize.css');
+
+
+
+
+
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+/* Navbar */
+nav {
+    background-color: #03588C; /* Azul medio */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de contacto */
+.contacto {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #03588C; /* Azul medio */
+}
+
+.informacion-contacto p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.redes-icono img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+    margin-top: 20px;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8C472E; /* Marrón rojizo */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario-contacto button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #048ABF; /* Azul claro */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.formulario-contacto button:hover {
+    background-color: #03588C; /* Azul medio */
+}
+

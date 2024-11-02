@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="/css/estiloproyectos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+    <!-- Header -->
+  {{>header}}
+
+  {{>navbar}} 
+
+    <!-- Main Content -->
+    <main>
+        <h2>Analizador Lexico-Cintactico-Semantico</h2> <!-- Título agregado aquí -->
+        <div class="container">
+            <div class="image-slider">
+                <div class="slides">
+                    <img src="/images/Proyecto1compi.png" alt="Descripción de la imagen 1">
+                    <img src="/images/analizador2.jpg" alt="Descripción de la imagen 2">
+                    <img src="/images/guatemala-universidadmarianogalvez.jpg" alt="Descripción de la imagen 3">
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="description">
+                <h1>Descripción del Proyecto</h1>
+                <p><br><b>Año:</b> 2021<br> <br><b>Categoria:</b> Programa de escritorio<br> <br>El proyecto consiste en el desarrollo de un analizador léxico, sintáctico y semántico en C# para un lenguaje de programación simple. Este proyecto tiene como objetivo permitir la validación de código fuente, la detección de errores y la generación de un árbol de sintaxis abstracta (AST) que represente la estructura del programa. <br> <br>
+                    El proyecto culmina en una herramienta que puede analizar y validar un código fuente simple, proporcionando mensajes de error claros y generando un AST. Esto permite la base para futuros desarrollos, como la interpretación o compilación del lenguaje..</p>
+            </div>
+        </div>
+        <a href="https://github.com/josetzaj/COMPILADOR.git" class="github-button" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+    </main>
+   
+
+
+       {{>footer}}
+
+        <script src="/script.js"></script>
+</body>
+</html>

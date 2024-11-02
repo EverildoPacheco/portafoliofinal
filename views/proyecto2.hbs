@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO2</title>
+    <link rel="stylesheet" href="/css/estiloproyectos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+    <!-- Header -->
+   {{>header}}
+
+  {{>navbar}} 
+
+    <!-- Main Content -->
+    <main>
+        <h2> REGISTRO DE REPARACIÓN DE COMPUTADORA</h2> <!-- Título agregado aquí -->
+        <div class="container">
+            <div class="image-slider">
+                <div class="slides">
+                    <img src="/images/Proyecto2taller.png" alt="Descripción de la imagen 1">
+                    <img src="/images/docket4.jpeg" alt="Descripción de la imagen 2">
+                    <img src="/images/docket.jpeg" alt="Descripción de la imagen 3">
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="description">
+                <h1>Descripción del Proyecto</h1>
+                <p><br><b>Año:</b> 2022<br> <br><b>Categoria:</b> Programa de escritorio<br> <br>El proyecto de Registro de Reparación de Computadora tiene como objetivo desarrollar una 
+                    aplicación que facilite la gestión y el seguimiento de los servicios de reparación de computadoras. Esta aplicación permitirá a los técnicos de reparación registrar,
+                     gestionar y rastrear cada caso de reparación de manera eficiente y organizada. <br> <br>El principal objetivo de este proyecto es optimizar el proceso de reparación de computadoras, mejorar la atención al cliente y facilitar el acceso a la información relevante, lo que a su vez puede llevar a una mayor satisfacción del cliente.</p>
+            </div>
+        </div>
+        <a href="https://github.com/josetzaj/TALLER.git" class="github-button" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+    </main>
+   
+   
+
+       {{>footer}}
+        <script src="/views/script.js"></script>
+</body>
+</html>

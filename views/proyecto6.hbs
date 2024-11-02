@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO6</title>
+    <link rel="stylesheet" href="/css/estiloproyectos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+    <!-- Header -->
+    {{>header}}
+
+  {{>navbar}} 
+
+    <!-- Main Content -->
+    <main>
+        <h2>CALCULADORA MRU-MRUV</h2> <!-- Título agregado aquí -->
+        <div class="container">
+            <div class="image-slider">
+                <div class="slides">
+                    <img src="/images/mru.png" alt="Descripción de la imagen 1">
+                    <img src="/images/mru2.png" alt="Descripción de la imagen 2">
+                    <img src="/images/mruv8.png" alt="Descripción de la imagen 3">
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="description">
+                <h1>Descripción del Proyecto</h1>
+                <p><br><b>Año:</b> 2024<br> <br><b>Categoria:</b> Programa de web<br> <br>El proyecto de Calculadora de MRU y MRUV es una aplicación web interactiva diseñada para ayudar a los estudiantes y profesionales de la física a calcular parámetros de movimiento en dos tipos de trayectorias: el Movimiento Rectilíneo Uniforme (MRU) y el Movimiento Rectilíneo Uniformemente Variado (MRUV). La aplicación permite a los usuarios ingresar datos relevantes y obtener resultados instantáneos. <br><br>El objetivo de este proyecto es proporcionar una herramienta educativa que facilite el aprendizaje de los conceptos de MRU y MRUV. Al ofrecer cálculos instantáneos y resultados claros, se busca mejorar la comprensión de estos temas en física.</p>
+            </div>
+        </div>
+        <a href="https://josepacheco2.github.io" class="github-button" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+    </main>
+    <script src="/views/script.js"></script>
+       {{>footer}}
+</body>
+</html>

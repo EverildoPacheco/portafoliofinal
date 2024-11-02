@@ -1,0 +1,516 @@
+body{
+    font-family: sans-serif;
+}
+
+ul {
+    
+    list-style:lower-alpha;
+    padding: 0;
+    margin: 0;
+    background: #025159;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espacio entre cada elemento de lista */
+}
+
+ul:hover{
+    
+    filter: drop-shadow(10px -7px 10px #000000);
+}
+
+/* ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #025159;
+    line-height: 60px;
+    text-align: center;
+}  */
+
+li {
+    display: inline-flex;
+    align-items: center; /* Alinea el texto y la imagen verticalmente */
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    display: flex;
+    align-items: center; /* Alinea el texto e imagen verticalmente */
+    gap: 5px; /* Espacio entre texto e imagen */
+}
+
+
+
+.banner
+{
+  
+    width: 100%;
+    height: 150px;
+}
+
+
+a:hover {
+    
+
+
+    filter: drop-shadow(10px 0px 10px rgb(0, 0, 0));
+
+    color: #000;
+}
+
+a img {
+    width: 50px;
+    height: 50px; 
+}
+
+
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 150px; /* Ajusta según el tamaño de tu banner */
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agrega sombra al texto para mejorar la visibilidad */
+    text-align: center;
+}
+
+.banner-text h2 {
+    margin: 0;
+    font-size: 40px; 
+    color: #ffffff;
+}
+
+.banner-text h1 {
+    margin-top: 5px; 
+    font-size: 40px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* 
+/* Estilo del contenedor con la imagen de fondo */
+
+.seccion-foto-descripcion {
+    background-image: url('/images/FONDOF.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    color: white; 
+    text-align: center;
+       
+}
+
+
+
+.foto {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 4px 10px rgb(1, 92, 128); /* Sombra suave alrededor de la foto */
+}
+
+.descripcion{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.inTex h1 {
+    margin: 10px 0;
+    font-size: 50px;
+}
+
+
+
+/* Contenedor de la galería */
+/* Contenedor de la galería */
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; /* Centra los elementos dentro de cada columna */
+}
+
+/*------------------------------------------ PROYECTOS*/
+/* Proyectos */
+.trabajos {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.trabajos h2 {
+    text-align: center;
+}
+
+.trabajos nav {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.trabajos nav a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #007be5;
+    font-weight: bold;
+    padding: 3px 10px;
+    border: 3px solid transparent;
+}
+
+
+
+/* Galería de imágenes */
+/* Proyectos */
+.trabajos {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.trabajos h2 {
+    text-align: center;
+}
+
+.trabajos nav {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.trabajos nav a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #007be5;
+    font-weight: bold;
+    padding: 3px 10px;
+    border: 3px solid transparent;
+}
+
+.trabajos nav a:hover {
+    border: 3px solid #007be5;
+
+}
+
+/* Galería de imágenes */
+.borde {
+    border: 3px solid #007be5 !important;
+}
+
+.trabajos .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap: 25px;
+}
+
+.trabajos .galeria .item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8d8d8d;
+    border-radius: 10px;
+    /* Tamaño fijo para asegurar la forma cuadrada */
+    width: 100%;
+    height: 330px; /* Ajusta este valor según sea necesario */
+}
+
+.trabajos .galeria .item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo sin distorsionarse */
+    transform: translate(-50%, -50%); /* Centra la imagen */
+    border-radius: 10px;
+}
+
+.trabajos .galeria .item .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(100%);
+    border-radius: 10px;
+}
+
+.trabajos .galeria .item:hover .info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.trabajos .galeria .item .info h3 {
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* .trabajos .galeria .item .info span {
+    color: #8d8d8d;
+    display: inline-block;
+    border: 2px solid #8d8d8d;
+    margin: 0 3px;
+    padding: 0 5px;
+} */
+
+.trabajos .galeria .item .info .tech-stack {
+    display: flex; /* Habilita el modo flexbox */
+    justify-content: center; /* Centra los elementos en la línea */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+    margin: 10px 0; /* Espaciado opcional entre la línea de texto y otros elementos */
+}
+
+.trabajos .galeria .item .info span {
+    color: #8d8d8d;
+    display: inline-block;
+    border: 2px solid #8d8d8d;
+    margin: 0 3px;
+    padding: 0 5px;
+}
+
+.trabajos .galeria .item .info a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007be5;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #e5f4ff;
+    transition: background-color 0.3s;
+}
+
+.trabajos .galeria .item .info a:hover {
+    background-color: #cce7ff;
+}
+
+
+
+
+
+
+/* estilos.css */
+
+/* Contenedor de habilidades */
+.habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+/* Estilo de cada habilidad */
+.habilidad {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.habilidad:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #025159; /* Color de borde al hacer hover */
+}
+
+/* Icono de la habilidad */
+.icono-habilidad {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Estilo de la descripción de la habilidad */
+.habescripcion {
+    font-size: 14px;
+    color: #161616;
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Barra de progreso */
+.barra-progreso {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+    margin-top: 10px;
+}
+
+.progreso {
+    background-color: #025159;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+/* Estilo del porcentaje */
+.habilidad p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+
+
+/* estilos.css */
+
+/* Estilo del apartado de contacto */
+.contacto {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Información de contacto */
+.informacion-contacto {
+    margin-bottom: 20px;
+}
+
+.informacion-contacto p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.informacion-contacto a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.informacion-contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.redes-icono img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+    margin-top: 20px;
+}
+
+.formulario-contacto h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-contacto label {
+    font-size: 16px;
+    color: #333;
+}
+
+.formulario-contacto input, 
+.formulario-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.formulario-contacto button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #0056b3;
+}
+
+
+/* estilos.css */
+
+
+
+
+/*-----------------------------------------*/
+
+footer {
+    background-color: #025159; /* Color de fondo del footer */
+    color: #ffffff; /* Color de texto */
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    border-top: 2px solid #A67458;
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.redes-icono img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* Transición al hacer hover */
+}
+
+.redes-icono img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de los iconos al pasar el mouse */
+    filter: brightness(0.8);
+}

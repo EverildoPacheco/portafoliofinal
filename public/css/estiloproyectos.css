@@ -1,0 +1,95 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+/* .image-slider {
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
+} */
+
+
+
+.image-slider {
+    position: relative; /* Necesario para posicionar los botones */
+    max-width: 600px; /* Ajusta el ancho según lo necesites */
+    overflow: hidden; /* Oculta el desbordamiento de imágenes */
+    border: 2px solid #676868; /* Contorno de las imágenes */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow:  4px 10px rgba(126, 125, 125, 0); /* Sombra */
+    filter: drop-shadow(10px 7px 5px #494949);
+}
+
+
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.description {
+    max-width: 400px;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.github-button {
+    display: block; /* Cambiado a block para permitir centrar */
+    margin: 20px auto; /* Márgenes automáticos para centrar */
+    padding: 10px 20px;
+    background-color: #048ABF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px; /* Puedes ajustar el ancho según tus necesidades */
+}
+
+
+main h2 {
+    text-align: center; /* Centra el texto */
+    margin: 25px 0; /* Margen arriba y abajo */
+    font-size: 30px; /* Tamaño de fuente */
+    color: #025159; /* Color del texto (puedes cambiarlo) */
+    font-weight: bold;
+    
+}
+
+main .description h1{
+
+    margin: 5px 0; /* Margen arriba y abajo */
+    font-size: 20px; /* Tamaño de fuente */
+    color: #025159; /* Color del texto (puedes cambiarlo) */
+    font-weight: bold;
+}

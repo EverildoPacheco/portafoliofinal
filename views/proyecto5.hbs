@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO5</title>
+    <link rel="stylesheet" href="/css/estiloproyectos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+    <!-- Header -->
+    {{>header}}
+
+  {{>navbar}} 
+
+    <!-- Main Content -->
+    <main>
+        <h2>Uso de Matrices y Vectores</h2> <!-- Título agregado aquí -->
+        <div class="container">
+            <div class="image-slider">
+                <div class="slides">
+                    <img src="/images/Proyecto5.png" alt="Descripción de la imagen 1">
+                    <img src="/images/matriz.png" alt="Descripción de la imagen 2">
+                    <img src="/images/Proyecto5.png" alt="Descripción de la imagen 3">
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="description">
+                <h1>Descripción del Proyecto</h1>
+                <p><br><b>Año:</b> 2023<br> <br><b>Categoria:</b> Programa de escritorio<br> <br>Este programa es un Gestor de Contactos desarrollado en C++ que demuestra el uso de vectores y nodos para almacenar y gestionar información de contactos de manera eficiente. El objetivo del programa es proporcionar una interfaz simple para agregar,
+                     buscar y eliminar contactos, utilizando estructuras de datos dinámicas que facilitan la manipulación de los datos <br><br>El objetivo de este programa es ilustrar el uso de vectores y nodos en C++, proporcionando a los usuarios una herramienta práctica para gestionar información de contactos. </p>
+            </div>
+        </div>
+        <a href="https://github.com/josetzaj/FARMACIA.git" class="github-button" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+    </main>
+    <script src="/views/script.js"></script>
+       {{>footer}}
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO8</title>
+    <link rel="stylesheet" href="/css/estiloproyectos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+    <!-- Header -->
+    {{>header}}
+
+  {{>navbar}} 
+
+    <!-- Main Content -->
+    <main>
+        <h2>Analizador Lexico-Cintactico-Semantico</h2> <!-- Título agregado aquí -->
+        <div class="container">
+            <div class="image-slider">
+                <div class="slides">
+                    <img src="/images/etica.png" alt="Descripción de la imagen 1">
+                    <img src="/images/Etica2.png" alt="Descripción de la imagen 2">
+                    <img src="/images/etica3.png" alt="Descripción de la imagen 3">
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="description">
+                <h1>Descripción del Proyecto</h1>
+                <p><br><b>Año:</b> 2024<br> <br><b>Categoria:</b> Programa de web<br> <br>El proyecto de Página Educativa de Ética Profesional está diseñado para proporcionar información accesible y comprensible sobre los principios éticos que rigen la conducta profesional en diversas disciplinas. La página busca fomentar la comprensión de la ética en el entorno laboral y ayudar a los
+                     profesionales a aplicar estos principios en su práctica diaria. <br><br>El objetivo de este proyecto es educar a los profesionales sobre la importancia de la ética en su campo, proporcionando herramientas y recursos que les permitan comprender y aplicar los principios éticos en su práctica.</p>
+            </div>
+        </div>
+        <a href="https://johnychiroy.github.io/proyectoetica/" class="github-button" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+
+
+    </main>
+    <script src="/views/script.js"></script>
+       {{>footer}}
+</body>
+</html>

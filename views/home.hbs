@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+
+   {{>header}}
+
+  {{>navbar}} 
+
+    <!-- Contenido Principal  esto se cambia dependindo el contenido -->
+    <main>
+        <section class="seccion-foto-descripcion">
+            <img src="/images/foto.jpg" alt="Foto personal" class="foto">
+            <div class="inTex">
+                <h1><strong>Estudiante en Ingeniería en Sistemas de Información <br> y Ciencias de la Computación</strong></h1>
+            </div>
+            <div class="descripcion">
+                <p>Soy un profesional especializado en el diseño, desarrollo, implementación y gestión de sistemas de <br>
+                    información y soluciones tecnológicas. Con una sólida formación en Ciencias de la Computación, <br>
+                    poseo una profunda comprensión de los fundamentos de la programación, estructuras de datos,<br>
+                    algoritmos y arquitectura de software, que me permiten crear soluciones eficientes y escalables.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+   {{>footer}}
+    
+    <!-- Footer -->
+</body>
+</html>

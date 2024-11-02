@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO3</title>
+    <link rel="stylesheet" href="/css/estiloproyectos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+    <!-- Header -->
+ {{>header}}
+
+  {{>navbar}} 
+    <!-- Main Content -->
+    <main>
+        <h2>AUTO PEDIDO DE COMIDA</h2> <!-- Título agregado aquí -->
+        <div class="container">
+            <div class="image-slider">
+                <div class="slides">
+                    <img src="/images/Proyecto3burger.png" alt="Descripción de la imagen 1">
+                    <img src="/images/acercaDe.jpeg" alt="Descripción de la imagen 2">
+                    <img src="/images/guatemala-universidadmarianogalvez.jpg" alt="Descripción de la imagen 3">
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="description">
+                <h1>Descripción del Proyecto</h1>
+                <p><br><b>Año:</b> 2021<br> <br><b>Categoria:</b> Programa de escritorio<br> <br>El programa de Auto Pedido de Comida
+                     es una aplicación diseñada para facilitar el proceso de pedido de alimentos en restaurantes y locales de comida rápida. El objetivo principal 
+                     de esta aplicación es proporcionar a los usuarios una forma rápida y conveniente de realizar sus pedidos, permitiéndoles seleccionar artículos
+                     del menú, personalizar sus opciones y realizar pagos de manera eficiente, todo desde su dispositivo móvil o computadora <br><br>El objetivo de este proyecto es mejorar la eficiencia en el proceso de pedido de comida, reducir el tiempo de espera y ofrecer una experiencia satisfactoria al cliente. .</p>
+            </div>
+        </div>
+        <a href="https://github.com/josetzaj/krusty_burguer.git" class="github-button" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+    <script src="/views/script.js"></script>
+       {{>footer}}
+</body>
+</html>
